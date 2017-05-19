@@ -16,7 +16,7 @@ var hcai_c = 'amedia';
 var hcai_d = 'dt.no';
 (function () {
 var script = document.createElement('script');
-script.src= 'https://54.229.161.117/hcai/carousel/crsl1.php?c=amedia&d=' + hcai_d +  '&callback=hcai_exists';
+script.src= 'http://54.229.161.117/hcai/carousel/crsl1.php?c=amedia&d=' + hcai_d +  '&callback=hcai_exists';
 document.body.appendChild(script);
 }());
 
@@ -25,7 +25,7 @@ if(!data.count) {
   return;
 }
 var iframe = document.createElement('iframe');
-iframe.setAttribute('src', 'https://54.229.161.117/hcai/carousel/crsl2.php?c='+hcai_c+'&d='+hcai_d+'&m='+data.mobile + "&im=" + encodeURIComponent(JSON.stringify(data.images, null, "\t")) + "&cl=" + encodeURIComponent(JSON.stringify(data.clients, null, "\t")));
+iframe.setAttribute('src', 'http://54.229.161.117/hcai/carousel/crsl2.php?c='+hcai_c+'&d='+hcai_d+'&m='+data.mobile + "&im=" + encodeURIComponent(JSON.stringify(data.images, null, "\t")) + "&cl=" + encodeURIComponent(JSON.stringify(data.clients, null, "\t")));
 iframe.setAttribute('scrolling', 'no');
 iframe.setAttribute('frameborder', '0');
 iframe.setAttribute('height', '250');
